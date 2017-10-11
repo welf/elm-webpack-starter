@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
+# Tags
+TAGS
+
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
@@ -21,6 +24,8 @@ yarn.lock
 elm-stuff/
 # elm-repl generated files
 repl-temp-*
+# elm-make generated file
+elm.js
 
 .DS_Store
 example/dist

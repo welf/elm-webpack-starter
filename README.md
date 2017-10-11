@@ -1,3 +1,7 @@
+## Preface
+
+
+
 # Elm 0.18 with Webpack 3, Hot Loading & Bootstrap 4-beta
 
 Elm dev environment with hot-loading (i.e. state is retained as you edit your code - Hot Module Reloading, HMR)). I use this daily for my professional work. Like elm-community/elm-webpack-starter but using Webpack 3.
@@ -7,22 +11,37 @@ Elm dev environment with hot-loading (i.e. state is retained as you edit your co
 Clone this repo into a new project folder and run install script.
 (I ignore the errors about missing jquery as it is best not to use the Bootstrap jquery-based components with Elm)
 
+With yarn
+```sh
+$ git clone git@github.com:welf/elm-webpack-starter.git new-project
+$ cd new-project
+$ yarn
+$ yarn dev
+ ```
+
 With npm
 
 ```sh
-$ git clone git@github.com:simonh1000/elm-webpack-starter.git new-project
+$ git clone git@github.com:welf/elm-webpack-starter.git new-project
 $ cd new-project
 $ npm install
 $ npm run dev
 ```
 
-With yarn
+If you get error running `npm run dev` or `yarn dev` make sure you are not running another server on the same port. Stop other server or edit `package.json` file and change `webpack-dev-server`'s port. Currently it is running on port `3000`:
+
 ```sh
-$ git clone git@github.com:simonh1000/elm-webpack-starter.git new-project
-$ cd new-project
-$ yarn
-$ yarn dev
- ```
+{
+  ...
+  "scripts": {
+    ...
+    "dev": "webpack-dev-server --hot --port 3000",
+    ...
+  },
+  ...
+}
+
+```
 
 Open http://localhost:3000 and start modifying the code in /src.
 (An example using Routing is provided in the `navigation` branch)
@@ -78,7 +97,9 @@ You will also need to npm install babel.
 
 ## Credits
 
-A long time ago this code was forked from https://github.com/fluxxu/elm-hot-loader
+It is a fork of [simonh1000 repository](https://github.com/simonh1000/elm-webpack-starter) with updated npm dependencies, improved `src/styles.scss` file which follows linter recommendations and another Elm project template which suit better to my professional needs.
+
+[simonh1000](https://github.com/simonh1000): A long time ago this code was forked from https://github.com/fluxxu/elm-hot-loader
 
 ## How it works
 
