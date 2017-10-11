@@ -39,8 +39,7 @@ If you get error running `npm run dev` or `yarn dev` make sure you are not runni
 
 ```
 
-Open http://localhost:3000 and start modifying the code in /src.
-(An example using Routing is provided in the `navigation` branch)
+Open http://localhost:3000 and start modifying the code in `/src`.
 
 ## Production
 
