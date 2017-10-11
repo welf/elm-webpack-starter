@@ -1,7 +1,3 @@
-## Preface
-
-
-
 # Elm 0.18 with Webpack 3, Hot Loading & Bootstrap 4-beta
 
 Elm dev environment with hot-loading (i.e. state is retained as you edit your code - Hot Module Reloading, HMR)). I use this daily for my professional work. Like elm-community/elm-webpack-starter but using Webpack 3.
